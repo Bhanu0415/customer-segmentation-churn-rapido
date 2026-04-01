@@ -1,6 +1,5 @@
 # 👥 Customer Segmentation & Churn Prediction
 
-Built for Rapido Data Science Internship application.
 
 ## 📌 Problem Statement
 Segment ride-hailing users into behavioral groups using RFM Analysis
