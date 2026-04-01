@@ -1,0 +1,37 @@
+{
+  "project": "Customer Segmentation & Churn Prediction",
+  "built_for": "Rapido Data Science Internship",
+  "dataset": {
+    "rows": 50000,
+    "churn_rate": "66.5%"
+  },
+  "segmentation": {
+    "method": "RFM Analysis + K-Means Clustering",
+    "n_clusters": 5,
+    "segments": [
+      "Champions",
+      "At Risk",
+      "Loyal",
+      "New Users",
+      "Hibernating"
+    ]
+  },
+  "churn_model": {
+    "algorithm": "LightGBM Classifier",
+    "AUC_ROC": 0.9487,
+    "top_churn_drivers": [
+      "days_since_last_ride",
+      "complaints",
+      "avg_rating_given",
+      "rides_last_30days",
+      "signup_days_ago"
+    ]
+  },
+  "key_findings": [
+    "days_since_last_ride is the strongest churn predictor (SHAP: 3.65)",
+    "Complaints have second highest churn impact (SHAP: 1.88)",
+    "Users with avg rating < 3.5 churn 40% more than satisfied users",
+    "Hibernating segment needs aggressive re-engagement within 48 hours",
+    "Champions segment (high RFM) should receive loyalty rewards to retain"
+  ]
+}
